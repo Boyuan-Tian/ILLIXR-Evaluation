@@ -11,8 +11,8 @@ import os
 import subprocess
 
 # Set path to texture image here
-groundtruthRawPath = "~/Desktop/OpenXR-Apps/dumped-data/groundtruth/"
-estimatedRawPath = "~/Desktop/OpenXR-Apps/dumped-data/estimated/"
+groundtruthRawPath = "~/Desktop/ILLIXR/output_data/"
+estimatedRawPath = "~/Desktop/dumped_data/estimated/"
 
 # No need to change the part below this line in gneral
 

@@ -21,13 +21,8 @@ Description:
 import os
 
 # set path to texture image collected by ILLIXR
-# groundtruthPosePath = "~/Desktop/OpenXR-Apps/dumped-data/groundtruth/"
-# estimatedPosePath = "~/Desktop/OpenXR-Apps/dumped-data/estimated/"
-
-
-# groundtruthPosePath = "/media/power-rdx/201606/ILLIXR_DATA_BACKUP/ILLIXR-Scene/ILLIXR-dumped-data/aligned_pose_lookup/"
-groundtruthPosePath = "/media/power-rdx/201606/ILLIXR_DATA_BACKUP/ILLIXR-Scene/ILLIXR-dumped-data/pose_lookup/"
-estimatedPosePath = "/media/power-rdx/201606/ILLIXR_DATA_BACKUP/ILLIXR-Scene/ILLIXR-dumped-data/openvins/"
+groundtruthPosePath = "~/Desktop/ILLIXR/output_data/"
+estimatedPosePath = "~/Desktop/dumped_data/estimated/"
 
 # set path and create the folder for intermediate result
 tempOutputPath = "./utils/output/"
