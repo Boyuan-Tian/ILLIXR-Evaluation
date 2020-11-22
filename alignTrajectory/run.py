@@ -21,8 +21,13 @@ Description:
 import os
 
 # set path to texture image collected by ILLIXR
-groundtruthPosePath = "~/Desktop/OpenXR-Apps/dumped-data/groundtruth/"
-estimatedPosePath = "~/Desktop/OpenXR-Apps/dumped-data/estimated/"
+# groundtruthPosePath = "~/Desktop/OpenXR-Apps/dumped-data/groundtruth/"
+# estimatedPosePath = "~/Desktop/OpenXR-Apps/dumped-data/estimated/"
+
+
+# groundtruthPosePath = "/media/power-rdx/201606/ILLIXR_DATA_BACKUP/ILLIXR-Scene/ILLIXR-dumped-data/aligned_pose_lookup/"
+groundtruthPosePath = "/media/power-rdx/201606/ILLIXR_DATA_BACKUP/ILLIXR-Scene/ILLIXR-dumped-data/pose_lookup/"
+estimatedPosePath = "/media/power-rdx/201606/ILLIXR_DATA_BACKUP/ILLIXR-Scene/ILLIXR-dumped-data/openvins/"
 
 # set path and create the folder for intermediate result
 tempOutputPath = "./utils/output/"
@@ -61,8 +66,10 @@ if (os.system(cmd)):
 
 '''
 	Step3: alignTrajectory
+        Align groundtruth to estimated for ILLIXR
+	Be careful about the order of parameteres, which is different from normal use cases
 '''
-cmd = "cd ./utils/align-trajectory/build/; ./alignTrajectory posyaw 0 ../../output/groundtruth.txt ../../output/estimated.txt"
+cmd = "cd ./utils/align-trajectory/build/; ./alignTrajectory posyaw 1 ../../output/estimated.txt ../../output/groundtruth.txt"
 print (cmd)
 if (os.system(cmd)):
 	exit("Aborted !!!")

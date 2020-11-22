@@ -1,0 +1,4 @@
+*.o
+*.png
+*.txt
+bin/fbo
