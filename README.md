@@ -104,7 +104,7 @@
 ***Go to folder: `~/Desktop/ILLIXR-Evaluation/runEvaluation/`***
 1. Run the script for image quality evaluation.
 	```
-	#$ python run.py --metrics#
+	$ python run.py --metrics
 	```
 	- The script computes a variety of image quality metrics, and we currently support the computation for SSIM and Nvidia FILP. The return outputs include mean, standard deviation, max, and min.
 	- Evaluation result for each frame will be written to a text file in the same directory.
