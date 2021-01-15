@@ -1,7 +1,7 @@
 # ILLIXR-Evaluation
 ## About:
 1. To minimize the changing of directories in the evaluation, we choose to move the data instead of the code. <br>
-	There are three folders during evaluation.
+	There are three folders for evaluation.
 	- Folder 1: A folder to store evaluation tools (this repo), e.g., `~/Desktop/ILLIXR-Evaluation/` <br>
 	```
 	$ git clone git@github.com:Boyuan-Tian/ILLIXR-Evaluation.git
@@ -37,7 +37,7 @@
 	```
 	- Activate the environment by `source ~/.bashrc`.
 
-3. Run ILLIXE until having enough images or before the memory overflowed. (3600 frames ~ 15 GB)
+3. Run ILLIXE until having enough images or before the memory overflowed. (3600 frames ~ 15 GB).
 	- Sometimes OpenVINS may lose tracking and go somewhere totally wrong. Please try to run the program one more time.
 	- The metadata about texture image collection will be recorded and printed at the end of execution.
 	- An image that takes >= 70 ms or 100 ms to collect means somewhere bottlenecked, it would be safe to run the experiment again.
